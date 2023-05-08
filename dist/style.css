@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: url('../assets/rainy-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    background-size: contain;
+    height: 100%;
+  }
+}
+
+
+.blur {
+  z-index: -5;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(6px); 
+  height: 100%;
+	width: 100%;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  
+
+  justify-content: flex-start;
+  gap: 30px;
+  align-items: center;
+  margin: 0 auto
+}
+
+.music__header {
+  color: orange;
+  text-align: center;
+}
+
+.music__items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+
+.music__item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  border: 1px solid white;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.music__item_sun{
+  background-image: url('../assets/summer-bg.jpg');
+}
+
+.music__item_rain{
+  background-image: url('../assets/rainy-bg.jpg');
+}
+
+.music__item_snow{
+  background-image: url('../assets/winter-bg.jpg');
+}
+
+.music__icon {
+  width: 50px;
+  height: 50px;
+  margin:auto;
+  cursor: pointer;
+}
+
+.music__icon_active {
+  width: 70px;
+  height: 70px;
+}

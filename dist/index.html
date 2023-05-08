@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашнее задание №1</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="blur"></div>
+      <div class="music-container">
+        <h1 class="music__header">Weather sounds</h1>
+
+        <div class="music__items">
+          <div class="music__item music__item_sun">
+            <img class="music__icon" src="../assets/icons/sun.svg" alt="" />
+          </div>
+          <div class="music__item music__item_rain">
+            <img
+              class="music__icon"
+              src="../assets/icons/cloud-rain.svg"
+              alt=""
+            />
+          </div>
+          <div class="music__item music__item_snow">
+            <img
+              class="music__icon"
+              src="../assets/icons/cloud-snow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="music__range">
+          <input
+            class="inp"
+            min="0"
+            max="1"
+            step="0.05"
+            value="0.5"
+            type="range"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
